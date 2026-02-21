@@ -3,91 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sharada Academy | IIT-JEE & NEET Coaching</title>
+<title>Sharada Academy</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+  font-family:'Roboto',sans-serif;
 }
 
-body{background:#f5f7fb;color:#333}
+body{color:#333;background:#fff}
+
+/* TOP BAR */
+.topbar{
+  background:#0d2c54;
+  color:#fff;
+  padding:8px 8%;
+  font-size:14px;
+  display:flex;
+  justify-content:space-between;
+}
 
 /* NAVBAR */
 nav{
-  background:#0b2a4a;
+  background:#fff;
   padding:18px 8%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  color:white;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  position:sticky;
+  top:0;
+  z-index:100;
 }
 
-nav h1{font-size:24px;font-weight:700}
+nav h1{color:#0d2c54;font-size:26px}
 
 nav ul{
-  display:flex;
   list-style:none;
+  display:flex;
   gap:25px;
 }
 
 nav a{
-  color:white;
   text-decoration:none;
+  color:#333;
   font-weight:500;
 }
 
 /* HERO */
 .hero{
-  height:85vh;
-  background:linear-gradient(rgba(11,42,74,.85),rgba(11,42,74,.85)),
-  url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b');
-  background-size:cover;
-  background-position:center;
-  color:white;
+  height:75vh;
+  background:url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b') center/cover;
+  position:relative;
   display:flex;
   align-items:center;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(13,44,84,.7);
+}
+
+.hero-content{
+  position:relative;
+  color:#fff;
   padding:0 8%;
+  max-width:700px;
 }
 
-.hero-content{max-width:650px}
+.hero h2{font-size:46px;margin-bottom:15px}
 
-.hero h2{
-  font-size:48px;
-  margin-bottom:20px;
-  font-weight:700;
-}
-
-.hero p{
-  margin-bottom:30px;
-  font-size:18px;
-}
+.hero p{margin-bottom:25px;font-size:18px}
 
 .btn{
-  padding:14px 28px;
   background:#ff6b00;
-  color:white;
+  padding:12px 28px;
+  color:#fff;
   text-decoration:none;
-  border-radius:6px;
-  font-weight:600;
+  border-radius:4px;
+  font-weight:500;
 }
 
-/* COURSES */
+/* SECTION */
 .section{
-  padding:80px 8%;
+  padding:70px 8%;
   text-align:center;
 }
 
 .section h3{
-  font-size:36px;
-  margin-bottom:50px;
-  color:#0b2a4a;
+  font-size:34px;
+  margin-bottom:45px;
+  color:#0d2c54;
 }
 
+/* COURSES */
 .cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -95,65 +110,93 @@ nav a{
 }
 
 .card{
-  background:white;
-  padding:35px;
-  border-radius:10px;
-  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  border:1px solid #eee;
+  padding:30px;
+  background:#fff;
   transition:.3s;
 }
 
 .card:hover{
-  transform:translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+  transform:translateY(-5px);
 }
 
-.card h4{
-  margin-bottom:15px;
-  color:#0b2a4a;
+.card h4{margin-bottom:10px;color:#0d2c54}
+
+/* ABOUT */
+.about{
+  background:#f5f7fb;
+  text-align:left;
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  align-items:center;
 }
 
-/* WHY US */
-.why{
-  background:#0b2a4a;
-  color:white;
+.about img{
+  width:420px;
+  max-width:100%;
+  border-radius:6px;
 }
 
-.why ul{
-  max-width:800px;
+.about-text{flex:1}
+
+/* RESULTS */
+.results{
+  background:#0d2c54;
+  color:#fff;
+}
+
+.stats{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:40px;
+}
+
+.stat{
+  font-size:22px;
+}
+
+.stat strong{
+  display:block;
+  font-size:40px;
+}
+
+/* CONTACT */
+.contact-box{
+  max-width:700px;
   margin:auto;
   text-align:left;
   line-height:2;
 }
 
-/* TESTIMONIAL */
-.testimonial{
-  background:white;
-  padding:40px;
-  border-radius:10px;
-  max-width:800px;
-  margin:auto;
-  box-shadow:0 8px 20px rgba(0,0,0,.08);
-}
-
 /* FOOTER */
 footer{
-  background:#081d33;
-  color:white;
-  padding:30px 8%;
+  background:#081c33;
+  color:#fff;
+  padding:35px 8%;
   text-align:center;
-  margin-top:60px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <div>Baramati, Maharashtra</div>
+  <div>📞 +91 9271585443</div>
+</div>
+
 <!-- NAVBAR -->
 <nav>
   <h1>Sharada Academy</h1>
   <ul>
     <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
     <li><a href="#">Courses</a></li>
-    <li><a href="#">Faculty</a></li>
+    <li><a href="#">Results</a></li>
     <li><a href="#">Gallery</a></li>
     <li><a href="#">Contact</a></li>
   </ul>
@@ -162,69 +205,77 @@ footer{
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <h2>Crack IIT-JEE & NEET with Confidence</h2>
-    <p>Expert faculty • Proven results • Personalized guidance</p>
-    <a href="#" class="btn">Enroll Now</a>
+    <h2>IIT-JEE • NEET • MHT-CET Coaching</h2>
+    <p>Building strong foundations for future success</p>
+    <a href="#" class="btn">Admission Open</a>
   </div>
 </section>
 
 <!-- COURSES -->
 <section class="section">
-  <h3>Popular Courses</h3>
-
+  <h3>Our Courses</h3>
   <div class="cards">
+
     <div class="card">
       <h4>JEE (Main & Advanced)</h4>
-      <p>Complete preparation for IIT admissions.</p>
+      <p>Complete IIT entrance preparation program.</p>
     </div>
 
     <div class="card">
       <h4>NEET</h4>
-      <p>Structured program for medical entrance success.</p>
+      <p>Medical entrance coaching with expert faculty.</p>
     </div>
 
     <div class="card">
       <h4>MHT-CET</h4>
-      <p>Focused training for Maharashtra engineering exams.</p>
+      <p>Focused preparation for Maharashtra exams.</p>
     </div>
 
     <div class="card">
-      <h4>Foundation</h4>
-      <p>Early preparation for classes 8th-10th.</p>
+      <h4>Foundation (8th-10th)</h4>
+      <p>Strong base for competitive exams.</p>
     </div>
+
   </div>
 </section>
 
-<!-- WHY US -->
-<section class="section why">
-  <h3>Why Choose Us</h3>
-  <ul>
-    <li>✔ Experienced & result-oriented faculty</li>
-    <li>✔ Personalized mentoring</li>
-    <li>✔ Regular tests & performance analysis</li>
-    <li>✔ Study material & doubt sessions</li>
-    <li>✔ Parent-teacher interaction</li>
-  </ul>
+<!-- ABOUT -->
+<section class="section about">
+  <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+  <div class="about-text">
+    <h3>About Sharada Academy</h3>
+    <p>
+      Sharada Academy provides high-quality coaching for engineering
+      and medical entrance exams with experienced faculty,
+      structured study material, and personal guidance.
+    </p>
+  </div>
 </section>
 
-<!-- TESTIMONIAL -->
-<section class="section">
-  <h3>Student Success Stories</h3>
+<!-- RESULTS -->
+<section class="section results">
+  <h3>Our Achievements</h3>
 
-  <div class="testimonial">
-    <p>
-      “I scored 98+ percentile in MHT-CET and got admission in a top engineering college.
-      The teaching methods and support at Sharada Academy are outstanding.”
-    </p>
-    <br>
-    <strong>— Successful Student</strong>
+  <div class="stats">
+    <div class="stat"><strong>500+</strong> Successful Students</div>
+    <div class="stat"><strong>95%</strong> Result Rate</div>
+    <div class="stat"><strong>10+</strong> Years Experience</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h3>Contact Us</h3>
+  <div class="contact-box">
+    📍 Baramati, Maharashtra<br>
+    📞 +91 9271585443<br>
+    ✉️ sharadaacademy@gmail.com
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Sharada Academy | All Rights Reserved</p>
-  <p>Baramati, Maharashtra | +91 9271585443</p>
+  © 2026 Sharada Academy | All Rights Reserved
 </footer>
 
 </body>
