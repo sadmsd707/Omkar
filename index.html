@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharada Academy | IIT-JEE & NEET Coaching</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{background:#f5f7fb;color:#333}
+
+/* NAVBAR */
+nav{
+  background:#0b2a4a;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+}
+
+nav h1{font-size:24px;font-weight:700}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+
+/* HERO */
+.hero{
+  height:85vh;
+  background:linear-gradient(rgba(11,42,74,.85),rgba(11,42,74,.85)),
+  url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:0 8%;
+}
+
+.hero-content{max-width:650px}
+
+.hero h2{
+  font-size:48px;
+  margin-bottom:20px;
+  font-weight:700;
+}
+
+.hero p{
+  margin-bottom:30px;
+  font-size:18px;
+}
+
+.btn{
+  padding:14px 28px;
+  background:#ff6b00;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* COURSES */
+.section{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.section h3{
+  font-size:36px;
+  margin-bottom:50px;
+  color:#0b2a4a;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  padding:35px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card h4{
+  margin-bottom:15px;
+  color:#0b2a4a;
+}
+
+/* WHY US */
+.why{
+  background:#0b2a4a;
+  color:white;
+}
+
+.why ul{
+  max-width:800px;
+  margin:auto;
+  text-align:left;
+  line-height:2;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+  background:white;
+  padding:40px;
+  border-radius:10px;
+  max-width:800px;
+  margin:auto;
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+/* FOOTER */
+footer{
+  background:#081d33;
+  color:white;
+  padding:30px 8%;
+  text-align:center;
+  margin-top:60px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h1>Sharada Academy</h1>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Courses</a></li>
+    <li><a href="#">Faculty</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Crack IIT-JEE & NEET with Confidence</h2>
+    <p>Expert faculty • Proven results • Personalized guidance</p>
+    <a href="#" class="btn">Enroll Now</a>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="section">
+  <h3>Popular Courses</h3>
+
+  <div class="cards">
+    <div class="card">
+      <h4>JEE (Main & Advanced)</h4>
+      <p>Complete preparation for IIT admissions.</p>
+    </div>
+
+    <div class="card">
+      <h4>NEET</h4>
+      <p>Structured program for medical entrance success.</p>
+    </div>
+
+    <div class="card">
+      <h4>MHT-CET</h4>
+      <p>Focused training for Maharashtra engineering exams.</p>
+    </div>
+
+    <div class="card">
+      <h4>Foundation</h4>
+      <p>Early preparation for classes 8th-10th.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section why">
+  <h3>Why Choose Us</h3>
+  <ul>
+    <li>✔ Experienced & result-oriented faculty</li>
+    <li>✔ Personalized mentoring</li>
+    <li>✔ Regular tests & performance analysis</li>
+    <li>✔ Study material & doubt sessions</li>
+    <li>✔ Parent-teacher interaction</li>
+  </ul>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section">
+  <h3>Student Success Stories</h3>
+
+  <div class="testimonial">
+    <p>
+      “I scored 98+ percentile in MHT-CET and got admission in a top engineering college.
+      The teaching methods and support at Sharada Academy are outstanding.”
+    </p>
+    <br>
+    <strong>— Successful Student</strong>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Sharada Academy | All Rights Reserved</p>
+  <p>Baramati, Maharashtra | +91 9271585443</p>
+</footer>
+
+</body>
+</html>
